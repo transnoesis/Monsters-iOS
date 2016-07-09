@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		90FB55491D31215E00184945 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FB55481D31215E00184945 /* AppDelegate.swift */; };
-		90FB554B1D31215E00184945 /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 90FB554A1D31215E00184945 /* GameScene.sks */; };
 		90FB554D1D31215E00184945 /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FB554C1D31215E00184945 /* GameScene.swift */; };
 		90FB554F1D31215E00184945 /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 90FB554E1D31215E00184945 /* GameViewController.swift */; };
 		90FB55521D31215E00184945 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 90FB55501D31215E00184945 /* Main.storyboard */; };
@@ -20,7 +19,6 @@
 /* Begin PBXFileReference section */
 		90FB55451D31215E00184945 /* Monsters.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Monsters.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		90FB55481D31215E00184945 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		90FB554A1D31215E00184945 /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		90FB554C1D31215E00184945 /* GameScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		90FB554E1D31215E00184945 /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		90FB55511D31215E00184945 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -62,7 +60,6 @@
 			isa = PBXGroup;
 			children = (
 				90FB55481D31215E00184945 /* AppDelegate.swift */,
-				90FB554A1D31215E00184945 /* GameScene.sks */,
 				90FB554C1D31215E00184945 /* GameScene.swift */,
 				90FB554E1D31215E00184945 /* GameViewController.swift */,
 				90FB55501D31215E00184945 /* Main.storyboard */,
@@ -133,7 +130,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				90FB555F1D31222000184945 /* .gitignore in Resources */,
-				90FB554B1D31215E00184945 /* GameScene.sks in Resources */,
 				90FB55571D31215E00184945 /* LaunchScreen.storyboard in Resources */,
 				90FB55541D31215E00184945 /* Assets.xcassets in Resources */,
 				90FB55521D31215E00184945 /* Main.storyboard in Resources */,
