@@ -65,6 +65,39 @@ class GameScene: SKScene {
         /* Called before each frame is rendered */
     }
     
+    override func touchesEnded(touches: Set<UITouch>, withEvent event: UIEvent?) {
+        guard let touch = touches.first else {
+            return
+        }
+        let touchLocation = touch.locationInNode(self)
+        
+        let projectile = SKSpriteNode(imageNamed: "projectile")
+        projectile.position = player.position
+        
+        // Determine offset of location to projectile
+        let offset = touchLocation - projectile.position
+        
+        // Bail out if you are shooting down or backwards
+        if (offset.x < 0) {
+            return
+        }
+        
+        addChild(projectile)
+        
+        // Get the direction of where to shoot
+        let direction = offset.normalized()
+        let shootAmount = direction * 1000
+        let realDest = shootAmount + projectile.position
+        
+        // Create the actions
+        let actionMove = SKAction.moveTo(realDest, duration: 2.0)
+        let actionMoveDone = SKAction.removeFromParent()
+        projectile.runAction(SKAction.sequence([actionMove, actionMoveDone]))
+        
+        // Play sound of projectile being fired
+        runAction(SKAction.playSoundFileNamed("pew-pew-lei.caf", waitForCompletion: false))
+    }
+    
     func random() -> CGFloat {
         return CGFloat(Float(arc4random()) / 0xFFFFFFFF)
     }
